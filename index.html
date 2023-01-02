@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reparto</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body onload="mostrarJuzgados()">
+    <div class="contenedor" id="cabecero">
+        <h1>Reparto  Audiencias Complejas <br> Juzgados P.M.F.C.G</h1>
+    </div>
+
+    <div class="contenedor">
+        <div class="elemento">
+            <ul id="juzgados"></ul>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div style="text-align: center;">
+            <button class="button-Agregar" style="cursor: pointer" onclick="agregarJuzgado()">+</button>
+        </div>
+        <form id="formulario">
+            <input type="text" id="nombreJuzgado" placeholder="Nombre del Juzgado">
+        </form>
+    </div>
+
+    <div class="contenedor">
+        <div style="text-align: center;">
+            <button onclick="ganadorReparto()">R</button>
+        </div>
+        <div class="ganador" id="juzgadoGanador"></div>
+    </div>
+    <script src="JS/juzgado.js"></script>
+    <script src="JS/app.js"></script>.
+    <script src="JS/prueba.js"></script>
+</body>
+</html>
